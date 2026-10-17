@@ -1,0 +1,89 @@
+/* Base variables (Light Theme) */
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --header-bg: #1f2937;
+  --header-text: #ffffff;
+  --link-color: #e5e7eb;
+  --link-hover: #38bdf8;
+  --btn-bg: #374151;
+  --btn-text: #ffffff;
+  --btn-border: #4b5563;
+}
+
+/* Dark Theme overrides */
+body[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --header-bg: #020617;
+  --header-text: #f8fafc;
+  --link-color: #94a3b8;
+  --link-hover: #38bdf8;
+  --btn-bg: #1e293b;
+  --btn-text: #f8fafc;
+  --btn-border: #334155;
+}
+
+/* Base resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: var(--link-hover);
+}
+
+/* Toggle button styling */
+.theme-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-border);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
+}
