@@ -1,0 +1,16 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #f6f8fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Título a la izquierda, menú a la derecha */
+  align-items: center;            /* Centrado vertical */
+  padding: 1rem 2rem;
+  background-color: #1f2937;      /* Color oscuro de fondo */
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
